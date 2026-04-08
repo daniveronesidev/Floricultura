@@ -1,0 +1,60 @@
+section {
+    padding-bottom: 4rem;
+    padding-top: 4rem;
+}
+
+input,
+textarea {
+    margin-bottom: 1rem;
+}
+
+.card {
+    width: 32%;
+    float: left;
+    margin: 5px;
+}
+
+footer {
+    text-align: center;
+}
+
+.imgalign{
+
+    width: 300px;
+  
+    display: inline-block;
+  
+  }
+
+  .carousel-inner > .carousel-item > img {
+    width: 500px;
+    height: 700px; 
+  }
+  
+
+  @media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }
+
+    form div {
+        position: static;
+        position: relative;
+        margin-top: -10px;
+    }
+
+    label {
+        position: absolute;
+    }
+
+    .classe, #id, body {
+        /*...*/
+    }
+}	
+
+@media (max-width: 600px) {
+    nav, article {
+        width: 100%;
+        height: auto;
+    }     

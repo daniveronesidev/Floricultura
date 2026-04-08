@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/finalizar.css">
+    <title>DONA FLOR FLORICULTURA</title>
+</head>
+
+<body>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+input[type="radio"],
+input[type="text"] {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+    </style>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <a href="./index.html"><img src="./images/logo.png" alt="logo" height="100" width="150"></a>
+                    
+                </div>
+                <div class="col">
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./sobre.html">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./noticias.html">Notícias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./cadastro.html">Cadastre-se</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./login.html">Login</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./carrinho.html">Carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+<body>
+    <div class="container">
+        <h1>Finalizar Compra</h1>
+
+        <form action="processar_pedido.php" method="post">
+            <h2>Meios de Pagamento</h2>
+            <label>
+                <input type="radio" name="pagamento" value="cartao"> Cartão de Crédito
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="dinheiro"> Dinheiro
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="pix"> Pix
+            </label>
+            <label>
+                <input type="radio" name="pagamento" value="boleto"> Boleto Bancário
+            </label>
+
+            <h2>Endereço de Entrega</h2>
+            <div class="endereco">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+
+                <label for="cidade">Cidade:</label>
+                <input type="text" id="cidade" name="cidade" required>
+
+                <label for="cep">CEP:</label>
+                <input type="text" id="cep" name="cep" required>
+            </div>
+
+            <button type="submit">Confirmar Pedido</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+h1 {
+    color: #333;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #333;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    color: #666;
+}
+
+input[type="radio"],
+input[type="text"] {
+    margin-top: 5px;
+    padding: 8px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffcc00;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}

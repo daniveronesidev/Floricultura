@@ -1,0 +1,11 @@
+USE floricultura_db;
+
+CREATE TABLE usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(50) NOT NULL,
+    usuario VARCHAR(50) NOT NULL,
+    senha VARCHAR(255) NOT NULL
+);
+INSERT INTO usuarios (nome, usuario, senha)
+VALUES ('Nome do Usuário', 'nomeusuario', 'senhadousuario');
+GRANT SELECT, INSERT, UPDATE, DELETE ON floricultura_db.* TO 'nomeusuario'@'localhost' IDENTIFIED BY 'senhadousuario';
